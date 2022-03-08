@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - A Pen by Zachary Skalko</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=5" />
+    <link href="./styles/main.scss" rel="stylesheet" />
+  </head>
+
+  <body translate="no" class="article-page">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <header>
+      <nav>
+        <a class="title" href="/"
+          ><span>zapplebee</span><span>.github.io</span></a
+        >
+        <div class="header-links">
+          <a href="/">posts</a>
+          <a href="#">about</a>
+        </div>
+      </nav>
+    </header>
+    <div class="headshot"><img src="./zac.png" /></div>
+    <!-- <section>
+      <h1>{</h1>
+      <details open>
+        <summary>
+          <h1>
+            <span class="section-name"
+              >frontEnd: <span class="open-brace"></span
+            ></span>
+          </h1>
+        </summary>
+        <div class="link-container">
+          <a href="#" tabindex="0">
+            <h2>a title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <span>11-11-2021</span>
+          </a>
+          <a href="#">
+            <h2>a title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <span>11-11-2021</span>
+          </a>
+          <a href="#">
+            <h2>a title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <span>11-11-2021</span>
+          </a>
+        </div>
+        <h1><span class="close-brace"></span></h1>
+      </details>
+      <details open>
+        <summary>
+          <h1>
+            <span class="section-name"
+              >backEnd: <span class="open-brace"></span
+            ></span>
+          </h1>
+        </summary>
+        <div class="link-container">
+          <a href="#" tabindex="0">
+            <h2>a title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <span>11-11-2021</span>
+          </a>
+          <a href="#">
+            <h2>a title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <span>11-11-2021</span>
+          </a>
+          <a href="#">
+            <h2>a title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <span>11-11-2021</span>
+          </a>
+        </div>
+        <h1><span class="close-brace"></span></h1>
+      </details>
+      <h1>}</h1>
+    </section> -->
+    <article>
+      <div class="headshot-float"></div>
+      <h1>QUID AIT ARISTOTELES RELIQUIQUE PLATONIS ALUMNI?</h1>
+
+      <pre><div style="display:block;overflow-x:auto;background:#2b2b2b;color:#f8f8f2;padding:.5em"><code class="language-jsx" style="white-space:pre"><span style="color:#dcc6e0">export</span><span> </span><span style="color:#dcc6e0">default</span><span> </span><span class="hljs-function" style="color:#dcc6e0">function</span><span class="hljs-function"> </span><span class="hljs-function" style="color:#00e0e0">Checkbox</span><span class="hljs-function">(</span><span class="hljs-function">) </span><span>{
+      </span><span></span><span style="color:#dcc6e0">const</span><span> cssVariables = {
+      </span><span></span><span style="color:#abe338">"--apperance"</span><span>: </span><span style="color:#abe338">"none"</span><span>,
+      </span><span></span><span style="color:#abe338">"--svgStringInitial"</span><span>: svgString(</span><span style="color:#abe338">"black"</span><span>),
+      </span><span></span><span style="color:#abe338">"--svgStringChecked"</span><span>: svgString(</span><span style="color:#abe338">"green"</span><span>),
+      </span><span></span><span style="color:#abe338">"--svgStringDisabled"</span><span>: svgString(</span><span style="color:#abe338">"gray"</span><span>),
+      </span>  };
+      <span>  </span><span style="color:#dcc6e0">return</span><span> </span><span class="xml" style="color:#ffa07a">&lt;</span><span class="xml" style="color:#ffa07a">input</span><span class="xml" style="color:#ffa07a"> </span><span class="xml hljs-attr" style="color:#ffa07a">style</span><span class="xml" style="color:#ffa07a">=</span><span class="xml" style="color:#abe338">{cssVariables}</span><span class="xml" style="color:#ffa07a"> </span><span class="xml hljs-attr" style="color:#ffa07a">type</span><span class="xml" style="color:#ffa07a">=</span><span class="xml" style="color:#abe338">"checkbox"</span><span class="xml" style="color:#ffa07a"> /&gt;</span><span>;
+      </span>}
+      
+      </code></div></pre>
+
+      <p>
+        LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.
+        <a href="HTTP://LORIPSUM.NET/?2" target="_BLANK"
+          >APPARET STATIM, QUAE SINT OFFICIA, QUAE ACTIONES.</a
+        >
+        QUANTUM ARISTOXENI INGENIUM CONSUMPTUM VIDEMUS IN MUSICIS? QUOS QUIDEM
+        TIBI STUDIOSE ET DILIGENTER TRACTANDOS MAGNOPERE CENSEO. OMNES ENIM
+        IUCUNDUM MOTUM, QUO SENSUS HILARETUR. ET CERTAMEN HONESTUM ET DISPUTATIO
+        SPLENDIDA! OMNIS EST ENIM DE VIRTUTIS DIGNITATE CONTENTIO. CUM SCIRET
+        CONFESTIM ESSE MORIENDUM EAMQUE MORTEM ARDENTIORE STUDIO PETERET, QUAM
+        EPICURUS VOLUPTATEM PETENDAM PUTAT. DUO REGES: CONSTRUCTIO INTERRETE.
+        <i>VIDE, QUAESO, RECTUMNE SIT.</i>
+      </p>
+
+      <p>
+        SCIENTIAM POLLICENTUR, QUAM NON ERAT MIRUM SAPIENTIAE CUPIDO PATRIA ESSE
+        CARIOREM. NEQUE ENIM CIVITAS IN SEDITIONE BEATA ESSE POTEST NEC IN
+        DISCORDIA DOMINORUM DOMUS; CUM AUTEM VENISSEMUS IN ACADEMIAE NON SINE
+        CAUSA NOBILITATA SPATIA, SOLITUDO ERAT EA, QUAM VOLUERAMUS. CUIUS AD
+        NATURAM APTA RATIO VERA ILLA ET SUMMA LEX A PHILOSOPHIS DICITUR. ITA NE
+        HOC QUIDEM MODO PARIA PECCATA SUNT. NON PUGNEM CUM HOMINE, CUR TANTUM
+        HABEAT IN NATURA BONI; SI ALIA SENTIT, INQUAM, ALIA LOQUITUR, NUMQUAM
+        INTELLEGAM QUID SENTIAT; SED VIRTUTEM IPSAM INCHOAVIT, NIHIL AMPLIUS.
+      </p>
+
+      <blockquote cite="HTTP://LORIPSUM.NET">
+        QUIBUS AUTEM IN REBUS TANTA OBSCURATIO NON FIT, FIERI TAMEN POTEST, UT
+        ID IPSUM, QUOD INTEREST, NON SIT MAGNUM.
+      </blockquote>
+
+      <ol>
+        <li>
+          NON IGITUR POTESTIS VOLUPTATE OMNIA DIRIGENTES AUT TUERI AUT RETINERE
+          VIRTUTEM.
+        </li>
+        <li>
+          UT SCIAS ME INTELLEGERE, PRIMUM IDEM ESSE DICO VOLUPTATEM, QUOD ILLE
+          DON.
+        </li>
+        <li>ERGO HOC QUIDEM APPARET, NOS AD AGENDUM ESSE NATOS.</li>
+        <li>NEMO IGITUR ESSE BEATUS POTEST.</li>
+      </ol>
+
+      <ul>
+        <li>
+          ALIIS ESSE MAIORA, ILLUD DUBIUM, AD ID, QUOD SUMMUM BONUM DICITIS,
+          ECQUAENAM POSSIT FIERI ACCESSIO.
+        </li>
+        <li>QUI POTEST IGITUR HABITARE IN BEATA VITA SUMMI MALI METUS?</li>
+        <li>ISTO MODO NE IMPROBOS QUIDEM, SI ESSENT BONI VIRI.</li>
+      </ul>
+
+      <p>
+        SUAM DENIQUE CUIQUE NATURAM ESSE AD VIVENDUM DUCEM. TUM ILLE: TU AUTEM
+        CUM IPSE TANTUM LIBRORUM HABEAS, QUOS HIC TANDEM REQUIRIS? ILLUM MALLEM
+        LEVARES, QUO OPTIMUM ATQUE HUMANISSIMUM VIRUM, CN. SI QUA IN IIS
+        CORRIGERE VOLUIT, DETERIORA FECIT. QUALIS ISTA PHILOSOPHIA EST, QUAE NON
+        INTERITUM AFFERAT PRAVITATIS, SED SIT CONTENTA MEDIOCRITATE VITIORUM?
+        <a href="HTTP://LORIPSUM.NET/" target="_BLANK">AN EIUSDEM MODI?</a>
+      </p>
+
+      <h2>
+        ITAQUE VIDES, QUO MODO LOQUANTUR, NOVA VERBA FINGUNT, DESERUNT USITATA.
+      </h2>
+
+      <p>
+        FORTEMNE POSSUMUS DICERE EUNDEM ILLUM TORQUATUM? HINC CETERI PARTICULAS
+        ARRIPERE CONATI SUAM QUISQUE VIDERO VOLUIT AFFERRE SENTENTIAM. ILLA SUNT
+        SIMILIA: HEBES ACIES EST CUIPIAM OCULORUM, CORPORE ALIUS SENESCIT;
+        ITAQUE NOSTRUM EST-QUOD NOSTRUM DICO, ARTIS EST-AD EA PRINCIPIA, QUAE
+        ACCEPIMUS. VIDEAMUS ANIMI PARTES, QUARUM EST CONSPECTUS ILLUSTRIOR; SED
+        NE, DUM HUIC OBSEQUOR, VOBIS MOLESTUS SIM. ALITER ENIM NOSMET IPSOS
+        NOSSE NON POSSUMUS. NON DOLERE, INQUAM, ISTUD QUAM VIM HABEAT POSTEA
+        VIDERO;
+      </p>
+    </article>
+    <footer id="blackness">
+      <a href="#">twitter</a>
+      <a href="#">github</a>
+      <a href="#">linkedin</a>
+    </footer>
+
+    <script>
+      const title = document.querySelector(".title");
+
+      function extractDegreeFromString(str) {
+        const rgx = /([0-9\.])+/gi;
+        const [deg] = rgx.exec(str);
+        return parseFloat(deg);
+      }
+
+      function doAnimate() {
+        window.requestAnimationFrame(doAnimate);
+        const elementStyle = window.getComputedStyle(title);
+        const isHovered = Boolean(
+          parseInt(elementStyle.getPropertyValue("--hoverState"), 10)
+        );
+        let rotation = elementStyle.getPropertyValue("--turn");
+        const deg = extractDegreeFromString(rotation);
+
+        if (isHovered && deg === 440) {
+          return;
+        }
+
+        if (!isHovered && deg === 220) {
+          return;
+        }
+
+        if (isHovered) {
+          title.style.setProperty("--turn", `${Math.min(440, deg + 5)}deg`);
+        } else {
+          title.style.setProperty("--turn", `${Math.max(220, deg - 4)}deg`);
+        }
+      }
+
+      function conditionallyDisableAnimation() {}
+
+      doAnimate();
+    </script>
+  </body>
+</html>

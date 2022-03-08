@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+$darkGray: #222222;
+$lightGray: #ceb9ce;
+$white: white;
+$deepRed: #d60c18;
+$hotRed: #fd3e47;
+$peach: #f5b5b2;
+$lightBlue: #75a59d;
+$darkBlue: #0a565f;
+
+:root {
+  --turn: 220deg;
+  --hoverState: 0;
+  --black: black;
+  --darkGray: #222222;
+  --lightGray: #ceb9ce;
+  --white: white;
+  --deepRed: #d60c18;
+  --hotRed: #fd3e47;
+  --peach: #f5b5b2;
+  --lightBlue: #75a59d;
+  --darkBlue: #0a565f;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+* {
+  --hoverState: 0;
+}
+
+*:hover {
+  --hoverState: 1;
+}
