@@ -19,4 +19,4 @@ console.log(
   "font-size: 24px;letter-spacing:-1em; font-family: serif;"
 );
 
-console.log("https://github.com/zapplebee/personal-blog");
+console.log("https://github.com/zapplebee/githubio-src");
