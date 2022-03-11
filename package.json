@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn 11ty && parcel build ./_site/index.html --public-url https://zapplebee.github.io --no-content-hash",
-    "serve": "parcel serve ./_site/index.html",
+    "serve": "parcel serve ./_site/index.html --dist-dir serveDist",
     "11ty": "node -r esbuild-runner/register ./node_modules/.bin/eleventy",
     "newpost": "node ./makepost.mjs"
   },
