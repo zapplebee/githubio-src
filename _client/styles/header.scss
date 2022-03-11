@@ -1,0 +1,183 @@
+@use "./viewports.scss";
+
+header {
+  filter: drop-shadow(0px -10px 100px var(--peach));
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+@include viewports.bplg {
+  .header-links {
+    gap: initial;
+    flex-direction: initial;
+    display: contents;
+  }
+}
+
+@include viewports.bplg {
+  header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+}
+
+nav {
+  background-color: var(--black);
+  padding: 2rem;
+  padding-bottom: 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  display: flex;
+
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@include viewports.bpmd {
+  nav {
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    padding-bottom: 4rem;
+  }
+}
+
+@include viewports.bplg {
+  nav {
+    gap: 2rem;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+header a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--hotRed);
+  font-size: 2rem;
+}
+
+header a:hover {
+  color: var(--deepRed);
+}
+
+.gap2 {
+  display: none;
+}
+
+@include viewports.bplg {
+  .gap2 {
+    flex-grow: 1;
+    display: inline-block;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: transparent;
+  --turn: 220deg;
+  background: linear-gradient(
+    var(--turn),
+    var(--deepRed),
+    var(--hotRed),
+    var(--peach),
+    var(--lightBlue),
+    var(--darkBlue)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.title span {
+  display: block;
+}
+
+@media (min-width: 760px) {
+  .title span {
+    display: inline-block;
+  }
+}
+
+@include viewports.bpxl {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+.headshot {
+  --top: 10rem;
+  --right: 1rem;
+  --size: 20vw;
+  display: block;
+  position: absolute;
+  right: var(--right);
+  top: var(--top);
+  width: var(--size);
+  height: var(--size);
+  z-index: 10;
+  border-radius: var(--size);
+  opacity: 1;
+  clip-path: initial;
+  background: linear-gradient(
+    var(--turn),
+    var(--deepRed),
+    var(--hotRed),
+    var(--peach),
+    var(--lightBlue),
+    var(--darkBlue)
+  );
+  & img {
+    border-radius: var(--size);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// @media (min-width: 500px) {
+//   .headshot {
+//     --right: 2rem;
+//     --top: 6rem;
+//     --size: 8rem;
+//   }
+// }
+
+@media (min-width: 500px) {
+  .headshot {
+    position: absolute;
+    --top: 2rem;
+    --size: 12rem;
+  }
+}
+
+@include viewports.bplg {
+  .headshot {
+    position: fixed;
+    --size: 8rem;
+  }
+}
+
+@include viewports.bpxl {
+  .headshot {
+    position: fixed;
+    --size: 12rem;
+    --right: 6rem;
+  }
+}
+
+.article-page {
+  .headshot {
+    position: absolute !important;
+  }
+}

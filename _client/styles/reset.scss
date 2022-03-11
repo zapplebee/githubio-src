@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+* {
+  --hoverState: 0;
+}
+
+*:hover {
+  --hoverState: 1;
+}

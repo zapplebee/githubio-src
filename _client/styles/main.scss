@@ -1,0 +1,42 @@
+@use "./colors.scss";
+@use "./viewports.scss";
+@use "./reset.scss";
+@use "./body.scss";
+@use "./header.scss";
+@use "./footer.scss";
+@use "./frontpage.scss";
+@use "./article.scss";
+
+.zapplebee-twitter-embed > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-box {
+  padding: 2rem 4rem;
+  background-color: black;
+  color: var(--lightBlue);
+  table {
+    margin: auto;
+    width: 100%;
+    max-width: 80ch;
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid var(--lightBlue);
+    border-collapse: collapse;
+    th {
+      background-color: var(--lightBlue);
+      color: black;
+      padding: 0.5em;
+    }
+    td {
+      padding: 0.5em;
+      border-top: 1px solid var(--lightBlue);
+    }
+  }
+  h1 {
+    font-family: inherit;
+    font-size: 2rem;
+  }
+}

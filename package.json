@@ -4,15 +4,28 @@
   "author": "Zachary Skalko",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel serve ./src/index.html ./src/other.html",
-    "build": "parcel build ./src/index.html ./src/other.html"
+    "build": "yarn 11ty && parcel build ./_site/index.html --public-url https://zapplebee.github.io --no-content-hash",
+    "serve": "parcel serve ./_site/index.html",
+    "11ty": "node -r esbuild-runner/register ./node_modules/.bin/eleventy",
+    "newpost": "node ./makepost.mjs"
   },
   "dependencies": {
-    "nodemon": "^2.0.15",
-    "parcel": "^2.0.1",
-    "serve": "^13.0.2"
+    "@11ty/eleventy": "^1.0.0",
+    "@mdx-js/runtime": "^1.6.22",
+    "@parcel/config-default": "^2.3.2",
+    "@parcel/core": "^2.3.2",
+    "@parcel/plugin": "^2.3.2",
+    "@parcel/transformer-sass": "^2.3.2",
+    "date-fns": "^2.28.0",
+    "esbuild": "^0.14.25",
+    "esbuild-runner": "^2.2.1",
+    "parcel": "^2.3.2",
+    "parcel-resolver-foo": "link:./parcelresolve",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-syntax-highlighter": "^15.4.5",
+    "react-twitter-embed": "^4.0.4",
+    "sharp": "^0.30.2"
   },
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.1"
-  }
+  "devDependencies": {}
 }

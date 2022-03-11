@@ -1,0 +1,198 @@
+@use "./colors.scss";
+@use "./viewports.scss";
+
+$lightness: 70%;
+article {
+  font-size: 1.6rem;
+  flex-grow: 1;
+  line-height: 1.6em;
+  width: 98vw;
+  margin: auto;
+  padding: 4rem 0.5rem;
+  padding-bottom: 8rem !important;
+  overflow: hidden;
+  margin-top: -6rem;
+  margin-bottom: -6rem;
+  h1 {
+    font-family: inherit;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  @include viewports.bpsm {
+    h1 {
+      margin-top: 4rem;
+      font-size: 3rem;
+    }
+  }
+
+  filter: drop-shadow(0px -10px 100px var(--peach));
+  background: linear-gradient(
+    var(--turn),
+    lighten(colors.$deepRed, $lightness),
+    lighten(colors.$hotRed, $lightness),
+    lighten(colors.$peach, $lightness),
+    lighten(colors.$lightBlue, $lightness),
+    lighten(colors.$darkBlue, $lightness)
+  );
+
+  a {
+    color: var(--darkBlue);
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--lightBlue);
+  }
+
+  a:visited {
+    color: var(--peach);
+  }
+  .headshot {
+    position: absolute;
+  }
+
+  table {
+    display: none;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 0.6em;
+
+    th {
+      color: var(--hotRed);
+      font-weight: normal;
+      font-style: italic;
+      line-height: initial;
+    }
+
+    td {
+      border-top: 1px solid var(--peach);
+      line-height: 1.2em;
+      padding: 0.5em;
+    }
+  }
+}
+
+@include viewports.bpmd {
+  article {
+    font-size: 1.6rem;
+    width: 90vw;
+    padding: 4rem 2rem;
+  }
+}
+
+@include viewports.bplg {
+  article {
+    font-size: 2rem;
+    width: 80vw;
+    padding: 4rem 4rem;
+  }
+}
+
+@include viewports.bpxl {
+  article {
+    font-size: 2rem;
+    width: 70ch;
+    padding: 4rem 6rem;
+  }
+}
+
+.article-page {
+  footer,
+  header {
+    position: initial;
+  }
+  padding: 0;
+}
+
+article {
+  .by-line {
+    display: block;
+    font-weight: lighter;
+    font-size: 0.5em;
+    width: 100%;
+    padding: 0 0;
+    line-height: 1em;
+    color: var(--darkBlue);
+    border-color: var(--darkBlue);
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    position: relative;
+    z-index: 10000;
+    text-align: right;
+    margin-top: -1rem;
+  }
+}
+
+article > blockquote > p {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 0.65em;
+  border-style: solid;
+  border-width: 0;
+  border-left-width: 2px;
+  border-color: var(--hotRed);
+  color: var(--hotRed);
+}
+
+.attributed-image {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  img {
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  figcaption {
+    font-size: 0.5em;
+    text-align: right;
+    margin-top: -2em;
+    margin-right: -2rem;
+    color: var(--lightBlue);
+    a {
+      color: inherit;
+    }
+    &:visited {
+      color: var(--darkGray);
+    }
+  }
+}
+
+.card-table {
+  font-size: 0.6em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  .card {
+    border: 1px solid var(--hotRed);
+    padding: 1rem;
+  }
+  .header {
+    border: 0;
+    line-height: 0.8em;
+    font-style: italic;
+    border-bottom: 1px solid var(--peach);
+    color: var(--peach);
+  }
+  .cell {
+    line-height: initial;
+    padding: 0.5rem;
+  }
+}
+
+@include viewports.bpmd {
+  .card-table {
+    display: none;
+  }
+  article {
+    table {
+      display: table;
+    }
+  }
+}
