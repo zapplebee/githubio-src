@@ -20,6 +20,6 @@ tags:
 
 I spend a lot of time writing code, designing app architecture, and mentoring at work.
 
-Outside of work, I can't wait for ice to melt so I can be on my kayak reading a book. I am proudly married (for 10 years) with three kiddos.
+Outside of work, I can't wait for ice to melt so I can be on my kayak reading a book. I've been married for a crazy 10 years and have three kiddos.
 
 </div>
