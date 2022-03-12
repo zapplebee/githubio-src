@@ -139,6 +139,27 @@ section {
   flex-grow: 1;
 }
 
+section > h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@include viewports.bpmd {
+  section {
+    margin-top: -3em;
+    & > h1 {
+      margin-top: 0.65em;
+      margin-bottom: 0.65em;
+    }
+  }
+}
+
+@include viewports.bplg {
+  section {
+    margin-top: -6em;
+  }
+}
+
 .landing-brace {
   margin-left: -0.5em;
 }
